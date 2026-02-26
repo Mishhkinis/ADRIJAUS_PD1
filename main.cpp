@@ -28,6 +28,17 @@ int main() {
     if (valiuta == 2) cout << "1 EUR = " << USD_Bendras << " USD\n";
     if (valiuta == 3) cout << "1 EUR = " << INR_Bendras << " INR\n";
         }
+    if (pasirinkimas == 2) {
+    int pasirinkimas, valiuta;
+    double kiekis;
+    cout << "1-GBP 2-USD 3-INR: ";
+    cin >> valiuta;
+    cout << "Iveskite euru kieki: ";
+    cin >> kiekis;
+    if (valiuta == 1) cout << "Gausite: " << kiekis * GBP_Pirkti << " GBP";
+    if (valiuta == 2) cout << "Gausite: " << kiekis * USD_Pirkti << " USD";
+    if (valiuta == 3) cout << "Gausite: " << kiekis * INR_Pirkti << " INR";
+    }
     }
 
     return 0;
